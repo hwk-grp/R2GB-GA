@@ -284,9 +284,9 @@ def GB_GA(gp_model, scaler_std, scaler_mean, batch_size, GenPool, istep, target_
         core_mol1 = Chem.MolFromSmarts(scaffold_smiles1)
         scaffold_smiles2 = "O=C(N)c1n[nH]c(c2c([OH])[cH]c([OH])c(C([CH3])[CH3])[cH]2)c1Nc3ccccc3"
         core_mol2 = Chem.MolFromSmarts(scaffold_smiles2)
-        scaffold_smiles3 = "O=C(N)c1noc(c2c([OH])[cH]c([OH])c(C([CH3])[CH3])[cH]2)c1Nc3ccccc3"
+        scaffold_smiles3 = "O=C(N)c1noc(c2c([OH])[cH]c([OH])c(C([CH3])[CH3])[cH]2)c1Oc3ccccc3"
         core_mol3 = Chem.MolFromSmarts(scaffold_smiles3)
-        scaffold_smiles4 = "O=C(N)c1n[nH]c(c2c([OH])[cH]c([OH])c(C([CH3])[CH3])[cH]2)c1Nc3ccccc3"
+        scaffold_smiles4 = "O=C(N)c1n[nH]c(c2c([OH])[cH]c([OH])c(C([CH3])[CH3])[cH]2)c1Oc3ccccc3"
         core_mol4 = Chem.MolFromSmarts(scaffold_smiles4)
 
         child = Chem.MolFromSmiles(Chem.MolToSmiles(child), sanitize=True)
