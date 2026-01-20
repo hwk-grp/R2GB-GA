@@ -262,7 +262,7 @@ def GB_GA(gp_model, scaler_std, scaler_mean, batch_size, GenPool, istep, target_
     
         l_mut = False
         # mutation 
-        if random.random() > mu_prob:
+        if random.random() < mu_prob:
             l_mut = True
 
             # add all possible mutations into mutate_candidates
